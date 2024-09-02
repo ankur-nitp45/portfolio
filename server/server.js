@@ -2,6 +2,10 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 
+const corsoption = {
+  origin: process.env.CLIENT,
+  method: ['GET', 'POST'],
+};
 // dotenv configuration
 dotenv.config();
 
@@ -9,7 +13,7 @@ dotenv.config();
 const app = express();
 
 //middlewares
-app.use(cors());
+app.use(cors(corsoption));
 app.use(express.json());
 
 //routes
