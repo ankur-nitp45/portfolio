@@ -9,9 +9,7 @@ const corsoption = {
   method: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
 };
-// dotenv configuration
 
-// rest object
 const app = express();
 
 //middlewares

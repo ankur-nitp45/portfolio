@@ -17,14 +17,11 @@ const Contact = () => {
       if (!name || !email || !msg) {
         toast.error('Please provide all details');
       }
-      const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}api/v1/portfolio/sentEmail`,
-        {
-          name,
-          email,
-          msg,
-        }
-      );
+      const res = await axios.post('api/v1/portfolio/sentEmail', {
+        name,
+        email,
+        msg,
+      });
 
       // validation success
       if (res.data.success) {
