@@ -25,7 +25,7 @@ const sendEmailController = (req, res) => {
     // email matter
     transporter.sendMail({
       to: 'ankurwalker2732@gmail.com',
-      from: 'ankurwalker2002@outlook.com',
+      from: process.env.Email,
       subject: 'Regarding Mern-portfolio website',
       html: `
             <h5> Detail Information </h5>
