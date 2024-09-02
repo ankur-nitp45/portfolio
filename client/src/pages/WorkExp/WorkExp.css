@@ -1,0 +1,54 @@
+.work{
+    padding: 30px 0px;
+    margin: 50px 0px;
+    margin-left: 108px;
+    background-color: #eeeeee6c;
+}
+
+.work hr{
+    color: gray;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.work h2{
+    font-weight: bold;
+    color: #138781;
+}
+
+.work .vertical-timeline-element-title{
+    color: #138781;
+}
+
+.work .vertical-timeline-element-subtitle{
+    color: black;
+}
+
+.work ._date{
+    color: rgba(0, 0, 0, 0.767);
+}
+
+#dark .work h2{
+    color: white;
+}
+
+#dark .work hr{
+    color: white;
+}
+
+#dark .work{
+    background-color: #631163a9;
+}
+
+@media(max-width:600px){
+    .work{
+        margin: 0px;
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+    .work hr{
+        width: 200px;
+    }
+
+}

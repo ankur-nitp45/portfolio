@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* dark mode*/
+#dark{
+  background-color: #3f033ff3;
+  color: #fff;
+}
+
+@media(max-width:600){
+  .footer{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}
